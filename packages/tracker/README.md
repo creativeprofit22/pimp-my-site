@@ -10,6 +10,7 @@ Exported from `src/index.ts`. Other packages use only these named types.
 
 - `TrackerConfig` – endpoint URL and variant id
 - `TrackerEvent` – one event as sent to the server (`view`, `scroll`, `stayed30`, `exit`)
+- `TrackerEventKind` – the union of event kinds (`view`, `scroll`, `stayed30`, `exit`)
 - (later phase) `startTracker(config)`
 
 ## Allowed dependencies

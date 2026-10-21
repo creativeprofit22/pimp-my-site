@@ -9,7 +9,7 @@
     "node": ">=22.13"
   },
   "scripts": {
-    "typecheck": "npm run typecheck --workspaces",
+    "typecheck": "npm run typecheck --workspaces && tsc --noEmit -p .",
     "lint": "biome check . && node scripts/check-boundaries.mjs",
     "format": "biome format --write .",
     "test": "vitest run",
