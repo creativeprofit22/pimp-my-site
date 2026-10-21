@@ -24,3 +24,6 @@ dist/
 build/
 _site/
 node_modules/
+
+# bench kit: raw run data stays local; study definitions, protocols and verdicts are tracked
+bench/studies/*/runs/

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "kitVersion": "1.0.0",
+  "project": "pimp-my-site: self-hosted loop where a cookieless tracker measures visitors, an AI agent proposes variant JSON changes, and a weekly rule on \"stayed 30s\" picks winners a human approves (Node 22+ TypeScript npm workspace + static site)",
+  "studyKinds": [
+    "code",
+    "library",
+    "agent"
+  ],
+  "existingTools": [
+    {
+      "name": "vitest",
+      "version": "5.0.5",
+      "versionCommand": "npx vitest --version"
+    }
+  ],
+  "services": {},
+  "prices": {},
+  "help": {
+    "studyKinds": "What this project expects to compare: code, library, engine, cli, service, agent, other.",
+    "existingTools": "Benchmark or measuring tools already in use (hyperfine, vitest bench, ffmpeg/vmaf, docker...). Studies call them; the kit does not replace them.",
+    "services": "Base URLs for the http adapter, by name: { \"staging\": \"http://127.0.0.1:8080\" }.",
+    "prices": "Only needed to ESTIMATE agent cost. Never guessed. Shape: { \"provider/model\": { \"inputPerMTok\": 0, \"outputPerMTok\": 0, \"cacheReadPerMTok\": 0, \"cacheWritePerMTok\": 0, \"source\": \"pricing page URL\", \"asOf\": \"YYYY-MM-DD\" } }, USD per million tokens."
+  }
+}

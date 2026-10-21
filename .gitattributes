@@ -1,0 +1,2 @@
+# Vendored bench kit is verified by file hashes; never convert line endings.
+bench/kit/** -text
