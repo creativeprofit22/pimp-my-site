@@ -1,3 +1,5 @@
+import type { VisitCounts } from "@pms/stats";
+
 /** An event as stored by the server. Never contains an IP address. */
 export interface StoredEvent {
   /** Salted, daily-rotating visitor hash (see ADR 0003). */
@@ -10,17 +12,10 @@ export interface StoredEvent {
   depth?: number;
 }
 
-/** Counts per variant for a time window, fed to `@pms/stats`. */
-export interface VariantCounts {
-  variant: string;
-  visitors: number;
-  stayed30: number;
-}
-
 /** Storage boundary. SQLite now, daily JSON-lines files as fallback. */
 export interface EventStore {
   append(events: readonly StoredEvent[]): Promise<void>;
-  countsFor(fromMs: number, toMs: number): Promise<VariantCounts[]>;
+  countsFor(fromMs: number, toMs: number): Promise<VisitCounts[]>;
 }
 
 /** A proposed variant waiting for human approval. */

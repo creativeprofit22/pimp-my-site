@@ -30,7 +30,7 @@ Background: `docs/brief.md` (the idea), `docs/plan.md` (day-1 plan), `docs/resea
                                                  │        │                             │
                                                  │        ▼                             │
                                                  │   EventStore: SQLite (0002)          │
-                                                 │        │ VariantCounts per week      │
+                                                 │        │ VisitCounts per week        │
                                                  │        ▼                             │
                                                  │ @pms/stats  weekly rule (0004)       │
                                                  │        │ WeeklyDecision              │
