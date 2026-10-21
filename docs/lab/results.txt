@@ -1,0 +1,14 @@
+seed=42 trials=2000 lift(real)=20%
+
+=== signal: sale (base 1%) ===
+visitors/day | A/A daily: fake >20% win | A/A weekly fake | A/B daily picks B | A/B weekly picks B | dial A/A wrong promote | dial A/B promotes B (median day)
+          50 |                      35% |             78% |               21% |                46% |                    24% |                  28% (day 22)
+         200 |                      68% |             72% |               40% |                61% |                    24% |                  47% (day 8)
+         500 |                      80% |             59% |               50% |                68% |                    26% |                  54% (day 6)
+
+=== signal: stayed (base 40%) ===
+visitors/day | A/A daily: fake >20% win | A/A weekly fake | A/B daily picks B | A/B weekly picks B | dial A/A wrong promote | dial A/B promotes B (median day)
+          50 |                      59% |             17% |               68% |                93% |                    16% |                  85% (day 21)
+         200 |                      29% |              1% |               86% |               100% |                    22% |                 100% (day 6)
+         500 |                      10% |              0% |               97% |               100% |                    26% |                 100% (day 3)
+
