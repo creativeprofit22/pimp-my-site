@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pimp my site</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        color: #1b1b1b;
+        background: #fafafa;
+      }
+      .hero {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 6rem 1.5rem;
+      }
+      .hero h1 {
+        font-size: clamp(2rem, 6vw, 3.25rem);
+        line-height: 1.1;
+        margin: 0 0 1rem;
+      }
+      .hero p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        margin: 0;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero" data-variant="fallback">
+        <h1 id="hero-headline">A website that gets better every week</h1>
+        <p id="hero-subhead">Suggests one change at a time and ships only what you approve.</p>
+      </section>
+    </main>
+    <script type="module" src="./hero.js"></script>
+  </body>
+</html>
